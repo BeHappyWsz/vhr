@@ -1,20 +1,18 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import store from './store'
-import {getRequest} from './utils/api'
-import {postRequest} from './utils/api'
-import {deleteRequest} from './utils/api'
-import {putRequest} from './utils/api'
-import {initMenu} from './utils/utils'
-import {isNotNullORBlank} from './utils/utils'
-import './utils/filter_utils'
-import 'font-awesome/css/font-awesome.min.css'
 import VueCookies from 'vue-cookies'
+import 'element-ui/lib/theme-chalk/index.css'
+import store from '../store'
+import {getRequest} from 'Util/api'
+import {postRequest} from 'Util/api'
+import {deleteRequest} from 'Util/api'
+import {putRequest} from 'Util/api'
+import {initMenu} from 'Util/utils'
+import {isNotNullORBlank} from 'Util/utils'
+import 'Util/filter_utils'
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)

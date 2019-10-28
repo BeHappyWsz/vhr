@@ -9,7 +9,7 @@
     </el-form-item>
     <el-checkbox class="login_remember" v-model="checked" label-position="left">记住密码</el-checkbox>
     <el-form-item class="login_action">
-      <el-button type="primary" @click="submitClick('loginForm')">登录</el-button>
+      <el-button type="primary" @click="submitClick">登录</el-button>
     </el-form-item>
   </el-form>
 </template>

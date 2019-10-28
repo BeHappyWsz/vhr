@@ -1,4 +1,4 @@
-import {getRequest} from './api'
+import {getRequest} from 'Util/api'
 import {Message} from 'element-ui'
 
 export const isNotNullORBlank = (...args)=> {
@@ -42,17 +42,17 @@ export const formatRoutes = (routes)=> {
       path: path,
       component(resolve){
         if (component.startsWith("Home")) {
-          require(['../components/' + component + '.vue'], resolve)
+          require(['@/view/' + component + '.vue'], resolve)
         } else if (component.startsWith("Emp")) {
-          require(['../components/emp/' + component + '.vue'], resolve)
+          require(['@/view/emp/' + component + '.vue'], resolve)
         } else if (component.startsWith("Per")) {
-          require(['../components/personnel/' + component + '.vue'], resolve)
+          require(['@/view/personnel/' + component + '.vue'], resolve)
         } else if (component.startsWith("Sal")) {
-          require(['../components/salary/' + component + '.vue'], resolve)
+          require(['@/view/salary/' + component + '.vue'], resolve)
         } else if (component.startsWith("Sta")) {
-          require(['../components/statistics/' + component + '.vue'], resolve)
+          require(['@/view/statistics/' + component + '.vue'], resolve)
         } else if (component.startsWith("Sys")) {
-          require(['../components/system/' + component + '.vue'], resolve)
+          require(['@/view/system/' + component + '.vue'], resolve)
         }
       },
       name: name,

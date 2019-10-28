@@ -7,8 +7,8 @@
   </div>
 </template>
 <script>
-  import FriendChat from '@/components/chat/FriendChat'
-  import Notification from '@/components/chat/Notification'
+  import FriendChat from '@/view/chat/FriendChat'
+  import Notification from '@/view/chat/Notification'
   export default {
     data() {
       return {
