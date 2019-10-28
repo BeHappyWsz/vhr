@@ -11,12 +11,23 @@
 </script>
 
 <style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+  font-family: unset;
+  font-family:Arial, Helvetica, sans-serif; 
+  position: relative;
+}
 </style>

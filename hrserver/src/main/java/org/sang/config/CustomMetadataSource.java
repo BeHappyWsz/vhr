@@ -19,9 +19,12 @@ import java.util.List;
  */
 @Component
 public class CustomMetadataSource implements FilterInvocationSecurityMetadataSource {
+
     @Autowired
-    MenuService menuService;
-    AntPathMatcher antPathMatcher = new AntPathMatcher();
+    private MenuService menuService;
+
+    private AntPathMatcher antPathMatcher = new AntPathMatcher();
+
     @Override
     public Collection<ConfigAttribute> getAttributes(Object o) {
         String requestUrl = ((FilterInvocation) o).getRequestUrl();

@@ -8,11 +8,10 @@
             <i class="fa fa-bell-o" @click="goChat" style="cursor: pointer"></i>
           </el-badge>
           <el-dropdown @command="handleCommand">
-  <span class="el-dropdown-link home_userinfo" style="display: flex;align-items: center">
-    {{user.name}}
-    <i><img v-if="user.userface!=''" :src="user.userface"
-            style="width: 40px;height: 40px;margin-right: 5px;margin-left: 5px;border-radius: 40px"/></i>
-  </span>
+            <span class="el-dropdown-link home_userinfo" style="display: flex;align-items: center">
+              {{user.name}}
+              <i><img v-if="user.userface!=''" :src="user.userface" style="width: 40px;height: 40px;margin-right: 5px;margin-left: 5px;border-radius: 40px"/></i>
+            </span>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>个人中心</el-dropdown-item>
               <el-dropdown-item>设置</el-dropdown-item>
@@ -31,11 +30,10 @@
                     <i :class="item.iconCls" style="color: #20a0ff;width: 14px;"></i>
                     <span slot="title">{{item.name}}</span>
                   </template>
-                  <el-menu-item width="180px"
-                                style="padding-left: 30px;padding-right:0px;margin-left: 0px;width: 170px;text-align: left"
-                                v-for="child in item.children"
-                                :index="child.path"
-                                :key="child.path">{{child.name}}
+                  <el-menu-item width="180px" style="padding-left: 30px;padding-right:0px;margin-left: 0px;width: 170px;text-align: left"
+                    v-for="child in item.children"
+                    :index="child.path"
+                    :key="child.path">{{child.name}}
                   </el-menu-item>
                 </el-submenu>
               </template>

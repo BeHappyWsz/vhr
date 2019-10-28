@@ -75,8 +75,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                                                         AuthenticationException e) throws IOException {
                         resp.setContentType("application/json;charset=utf-8");
                         RespBean respBean = null;
-                        if (e instanceof BadCredentialsException ||
-                                e instanceof UsernameNotFoundException) {
+                        if (e instanceof BadCredentialsException || e instanceof UsernameNotFoundException) {
                             respBean = RespBean.error("账户名或者密码输入错误!");
                         } else if (e instanceof LockedException) {
                             respBean = RespBean.error("账户被锁定，请联系管理员!");

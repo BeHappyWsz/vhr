@@ -14,9 +14,11 @@ import {initMenu} from './utils/utils'
 import {isNotNullORBlank} from './utils/utils'
 import './utils/filter_utils'
 import 'font-awesome/css/font-awesome.min.css'
+import VueCookies from 'vue-cookies'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+Vue.use(VueCookies)
 
 Vue.prototype.getRequest = getRequest;
 Vue.prototype.postRequest = postRequest;
